@@ -1,8 +1,8 @@
-export default function Home() {
-  return (
-    <div style={{ fontFamily: 'Poppins, sans-serif', textAlign: 'center', marginTop: '50px' }}>
-      <h1>📒 Welcome to Note-by-Nadu</h1>
-      <p>Personal & Colorful Note App Powered by Firebase + AI</p>
-    </div>
-  );
+import Link from 'next/link';
+export default function Home(){
+  return(<main style={{padding:'2rem',fontFamily:'sans-serif'}}>
+    <h1>Note by Nadu</h1>
+    <p>Firebase + Next.js note app.</p>
+    <nav><Link href='/signup'>Sign Up</Link>{" | "}<Link href='/login'>Login</Link></nav>
+  </main>);
 }
